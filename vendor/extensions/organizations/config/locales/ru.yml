@@ -1,0 +1,56 @@
+ru:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Добавить Address
+            reorder: Изменить порядок Addresses
+            reorder_done: Закончить изменять порядок Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Addresses" не найдено. Нажмите "Добавить Address"
+              чтобы создать address.
+          address:
+            view_live_html: Просмотреть address вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать address
+            delete: Удалить address навсегда
+        organizations:
+          actions:
+            create_new: Добавить Organization
+            reorder: Изменить порядок Organizations
+            reorder_done: Закончить изменять порядок Organizations
+          records:
+            title: Organizations
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Organizations" не найдено. Нажмите "Добавить Organization"
+              чтобы создать organization.
+          organization:
+            view_live_html: Просмотреть organization вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать organization
+            delete: Удалить organization навсегда
+      addresses:
+        show:
+          other: Другие Addresses
+      organizations:
+        show:
+          other: Другие Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

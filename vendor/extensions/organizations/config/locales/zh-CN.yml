@@ -1,0 +1,54 @@
+zh-CN:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: 建立新的 Address
+            reorder: 对 Addresses 重新排序
+            reorder_done: 对 Addresses 的重新排序结束
+          records:
+            title: Addresses
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Addresses . 点击 "Add New Address" 创建一个address.
+          address:
+            view_live_html: 查看 address 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 address
+            delete: 永久删除 address
+        organizations:
+          actions:
+            create_new: 建立新的 Organization
+            reorder: 对 Organizations 重新排序
+            reorder_done: 对 Organizations 的重新排序结束
+          records:
+            title: Organizations
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Organizations . 点击 "Add New Organization" 创建一个organization.
+          organization:
+            view_live_html: 查看 organization 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 organization
+            delete: 永久删除 organization
+      addresses:
+        show:
+          other: 其他 Addresses
+      organizations:
+        show:
+          other: 其他 Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

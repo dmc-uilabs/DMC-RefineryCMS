@@ -1,0 +1,50 @@
+<%= form_for [refinery, :organizations_admin, @organization] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @organization,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "organizations/organization" -%>
+  </div>
+
+  <%= f.fields_for :address do |a| %>
+    <%= a.label :street1 %>
+    <%= a.text_field :street1 %>
+
+    <%= a.label :street2 %>
+    <%= a.text_field :street2 %>
+
+    <%= a.label :city %>
+    <%= a.text_field :city %>
+
+    <%= a.label :state %>
+    <%= a.text_field :state %>
+
+    <%= a.label :country %>
+    <%= a.text_field :country %>
+
+    <%= a.label :zip %>
+    <%= a.text_field :zip %>
+  <% end %>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.organizations.admin.organizations.organization'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @organization.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

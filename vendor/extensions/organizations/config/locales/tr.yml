@@ -1,0 +1,58 @@
+tr:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Yeni Ekle Address
+            reorder: Tekrar sirala Addresses
+            reorder_done: Tekrar siralama tamamlandiAddresses
+          records:
+            title: Addresses
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Addresses yok henuz.  Tikla "Yeni Ekle Address"
+              eklemek senin ilk address.
+          address:
+            view_live_html: Bunu canlu address goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle address
+            delete: Bunu Sil address sonsuza dek
+        organizations:
+          actions:
+            create_new: Yeni Ekle Organization
+            reorder: Tekrar sirala Organizations
+            reorder_done: Tekrar siralama tamamlandiOrganizations
+          records:
+            title: Organizations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Organizations yok henuz.  Tikla "Yeni Ekle
+              Organization" eklemek senin ilk organization.
+          organization:
+            view_live_html: Bunu canlu organization goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle organization
+            delete: Bunu Sil organization sonsuza dek
+      addresses:
+        show:
+          other: Diger Addresses
+      organizations:
+        show:
+          other: Diger Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

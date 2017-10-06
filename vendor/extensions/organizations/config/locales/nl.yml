@@ -1,0 +1,58 @@
+nl:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Nieuwe Address toevoegen
+            reorder: De volgorde van de Addresses wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Address-volgorde
+          records:
+            title: Addresses
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Addresses. Druk op 'Nieuwe Address toevoegen'
+              om de eerste toe te voegen.
+          address:
+            view_live_html: Deze address op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze address
+            delete: Deze address definitief verwijderen
+        organizations:
+          actions:
+            create_new: Nieuwe Organization toevoegen
+            reorder: De volgorde van de Organizations wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Organization-volgorde
+          records:
+            title: Organizations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Organizations. Druk op 'Nieuwe Organization
+              toevoegen' om de eerste toe te voegen.
+          organization:
+            view_live_html: Deze organization op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze organization
+            delete: Deze organization definitief verwijderen
+      addresses:
+        show:
+          other: Andere Addresses
+      organizations:
+        show:
+          other: Andere Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

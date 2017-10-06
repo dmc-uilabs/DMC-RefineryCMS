@@ -1,0 +1,58 @@
+es:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Crear nuevo address
+            reorder: Reordenar addresses
+            reorder_done: Reordenación de addresses completada
+          records:
+            title: Addresses
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay addresses todavía. Pulsa en "Crear nuevo Address"
+              para crear tu primer address.
+          address:
+            view_live_html: Ver este address como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este address
+            delete: Borrar este address para siempre
+        organizations:
+          actions:
+            create_new: Crear nuevo organization
+            reorder: Reordenar organizations
+            reorder_done: Reordenación de organizations completada
+          records:
+            title: Organizations
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay organizations todavía. Pulsa en "Crear nuevo Organization"
+              para crear tu primer organization.
+          organization:
+            view_live_html: Ver este organization como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este organization
+            delete: Borrar este organization para siempre
+      addresses:
+        show:
+          other: Otros addresses
+      organizations:
+        show:
+          other: Otros organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

@@ -1,0 +1,58 @@
+fr:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Address
+            reorder: Réordonner les Addresses
+            reorder_done: Fin de réordonnancement des Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Address. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Address" pour créer votre premi(er/ère) address.
+          address:
+            view_live_html: Voir ce(t/tte) address <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) address
+            delete: Supprimer définitivement ce(t/tte) address
+        organizations:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Organization
+            reorder: Réordonner les Organizations
+            reorder_done: Fin de réordonnancement des Organizations
+          records:
+            title: Organizations
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Organization. Cliquer sur
+              "Créer un(e) nouve(au/l/lle) Organization" pour créer votre premi(er/ère)
+              organization.
+          organization:
+            view_live_html: Voir ce(t/tte) organization <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) organization
+            delete: Supprimer définitivement ce(t/tte) organization
+      addresses:
+        show:
+          other: Autres Addresses
+      organizations:
+        show:
+          other: Autres Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

@@ -1,0 +1,56 @@
+en:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Add New Address
+            reorder: Reorder Addresses
+            reorder_done: Done Reordering Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Addresses yet. Click "Add New Address" to add
+              your first address.
+          address:
+            view_live_html: View this address live <br/><em>(opens in a new window)</em>
+            edit: Edit this address
+            delete: Remove this address forever
+        organizations:
+          actions:
+            create_new: Add New Organization
+            reorder: Reorder Organizations
+            reorder_done: Done Reordering Organizations
+          records:
+            title: Organizations
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Organizations yet. Click "Add New Organization"
+              to add your first organization.
+          organization:
+            view_live_html: View this organization live <br/><em>(opens in a new window)</em>
+            edit: Edit this organization
+            delete: Remove this organization forever
+      addresses:
+        show:
+          other: Other Addresses
+      organizations:
+        show:
+          other: Other Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

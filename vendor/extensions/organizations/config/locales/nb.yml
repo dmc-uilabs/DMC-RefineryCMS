@@ -1,0 +1,58 @@
+nb:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Lag en ny Address
+            reorder: Endre rekkefølgen på Addresses
+            reorder_done: Ferdig å endre rekkefølgen Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Addresses enda. Klikk på "Lag en ny Address"
+              for å legge til din første address.
+          address:
+            view_live_html: Vis hvordan denne address ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne address
+            delete: Fjern denne address permanent
+        organizations:
+          actions:
+            create_new: Lag en ny Organization
+            reorder: Endre rekkefølgen på Organizations
+            reorder_done: Ferdig å endre rekkefølgen Organizations
+          records:
+            title: Organizations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Organizations enda. Klikk på "Lag en ny Organization"
+              for å legge til din første organization.
+          organization:
+            view_live_html: Vis hvordan denne organization ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne organization
+            delete: Fjern denne organization permanent
+      addresses:
+        show:
+          other: Andre Addresses
+      organizations:
+        show:
+          other: Andre Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

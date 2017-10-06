@@ -1,0 +1,57 @@
+it:
+  refinery:
+    plugins:
+      addresses:
+        title: Addresses
+      organizations:
+        title: Organizations
+    organizations:
+      admin:
+        addresses:
+          actions:
+            create_new: Aggiungi Nuovo Address
+            reorder: Riordina Addresses
+            reorder_done: Termina il Riordino di Addresses
+          records:
+            title: Addresses
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Addresses. Clicca "Aggiungi Nuovo Address"
+              per aggiungere il tuo primo address.
+          address:
+            view_live_html: Guarda live questo address <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo address
+            delete: Rimuovi per sempre questo address
+        organizations:
+          actions:
+            create_new: Aggiungi Nuovo Organization
+            reorder: Riordina Organizations
+            reorder_done: Termina il Riordino di Organizations
+          records:
+            title: Organizations
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Organizations. Clicca "Aggiungi Nuovo
+              Organization" per aggiungere il tuo primo organization.
+          organization:
+            view_live_html: Guarda live questo organization <br/><em>(apre una nuova
+              finestra)</em>
+            edit: Modifica questo organization
+            delete: Rimuovi per sempre questo organization
+      addresses:
+        show:
+          other: Altri Addresses
+      organizations:
+        show:
+          other: Altri Organizations
+  activerecord:
+    attributes:
+      refinery/organizations/address:
+        street1: Street1
+        street2: Street2
+        city: City
+        state: State
+        country: Country
+        zip: Zip
+        organization_id: Organization
+      refinery/organizations/organization:
+        name: Name
+        description: Description

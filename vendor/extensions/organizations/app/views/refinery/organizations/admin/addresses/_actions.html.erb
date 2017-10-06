@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Organizations::Admin::AddressesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.organizations_admin_addresses_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_organizations_admin_address_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Organizations::Admin::AddressesController.sortable? && ::Refinery::Organizations::Address.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.organizations_admin_addresses_path,
+                     t('.reorder', what:  "Addresses"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.organizations_admin_addresses_path,
+                      t('.reorder_done', what: "Addresses"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

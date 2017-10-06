@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="addresses">
+    <% @addresses.each do |address| %>
+      <li>
+        <%= link_to address.street1, refinery.organizations_address_path(address) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

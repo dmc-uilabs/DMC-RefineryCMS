@@ -1,0 +1,2 @@
+<%= will_paginate @organizations if Refinery::Organizations::Admin::OrganizationsController.pageable? %>
+<%= render 'sortable_list' %>
